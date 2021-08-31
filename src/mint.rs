@@ -20,7 +20,7 @@ pub async fn mint(
     let tx_data = contract
         .abi()
         .function("mintToken")?
-        .encode_input(&((token_owner, cid)).into_tokens())?;
+        .encode_input(&(token_owner, cid).into_tokens())?;
     let tx_obj = web3::types::TransactionParameters {
         to: Some(contract_address),
         data: web3::types::Bytes(tx_data),
