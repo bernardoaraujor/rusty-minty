@@ -1,0 +1,14 @@
+{
+  "name": "chainsafe",
+  "version": "1.0.0",
+  "devDependencies": {
+    "ethers": "^5.0.31",
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.1",
+    "hardhat": "^2.1.1",
+    "hardhat-abi-exporter": "^2.2.1"
+  }
+}

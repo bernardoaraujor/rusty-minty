@@ -1,0 +1,13 @@
+# IDE
+.idea
+
+#Hardhat files
+cache
+artifacts
+abi
+
+# JS
+node_modules
+
+# Rust
+/target
