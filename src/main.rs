@@ -35,7 +35,7 @@ struct Opt {
     contract_address: String,
 
     /// ERC721 Contract ABI JSON Path
-    #[structopt(name = "contract-json", short = "a", parse(from_os_str), default_value = "abi/contracts/Minty.sol/Minty.json")]
+    #[structopt(name = "contract-abi", short = "a", parse(from_os_str), default_value = "abi/contracts/Minty.sol/Minty.json")]
     contract_abi: PathBuf,
 }
 
