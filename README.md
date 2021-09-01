@@ -23,9 +23,9 @@ For readability, the example below sets a few environment variables:
 - `WEB3_PROV`: URL to Web3 provider. Ex.: Infura endpoint, or local Ethereum node.
 - `PRIV_KEY`: the Minter account private key (**warning**: be careful!).
 - `TOKEN_OWNER`: the address of the NFT owner. It could be Minter or different account.
-- `GAS_LIMIT`: the max amount of Gas you're willing to pay to mint. Defaults to `10000000`.
+- `GAS_LIMIT`: the max amount of Gas you're willing to pay to mint. The `-g` CLI arg is optional and defaults to `10000000`.
 - `CONTRACT_ADDR`: the address of the Minty contract on the chain.
-- `CONTRACT_ABI`: path to Minty contract ABI artifact (`.json`). Defaults to `abi/contracts/Minty.sol/Minty.json`, which is the standard path when compiling via Hardhat.
+- `CONTRACT_ABI`: path to Minty contract ABI artifact (`.json`). The `-a` CLI arg is optional and defaults to `abi/contracts/Minty.sol/Minty.json`, which is the standard (relative) path when compiling via Hardhat.
 
 ```shell
 $ FILE=/path/to/file
