@@ -14,7 +14,7 @@ pub async fn mint(
     let web3 = web3::Web3::new(transport);
 
     let eth = web3.eth();
-    let contract_abi = ethabi::Contract::load(contract_abi).unwrap();
+    let contract_abi = ethabi::Contract::load(contract_abi)?;
     let contract = web3::contract::Contract::new(eth, contract_address, contract_abi);
 
     let tx_data = contract
