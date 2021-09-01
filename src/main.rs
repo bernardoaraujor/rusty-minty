@@ -8,7 +8,7 @@ mod ipfs;
 mod mint;
 
 #[derive(Debug, StructOpt)]
-#[structopt(name = "example", about = "An example of StructOpt usage.")]
+#[structopt(name = "rusty-minty", about = "Mint ERC721 NFTs.")]
 struct Opt {
     /// Input File Path
     #[structopt(name = "input-file", short = "i", parse(from_os_str))]
