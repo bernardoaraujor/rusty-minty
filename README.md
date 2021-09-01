@@ -46,6 +46,8 @@ IPFS CID: QmVbZSaArBjQx9R55ihfmocMXaNcBTBCNqXtqzA9NdCzxE
 Mint Tx: 0x835357b29b7e0fc60f7e279fa8ae03a968727a6256cc6667abe54f8a2bba29ec
 ```
 
+Note: you should check the Tx hash on Etherscan to verify whether it was successful.
+
 ## Test on local Hardhat setup
 
 You could also test on a local Hardhat setup.
