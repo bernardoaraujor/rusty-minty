@@ -27,7 +27,7 @@ struct Opt {
     token_owner: String,
 
     /// Gas limit
-    #[structopt(name = "gas-limit", short = "g")]
+    #[structopt(name = "gas-limit", short = "g", default_value = "10000000")]
     gas_limit: u64,
 
     /// ERC721 Contract Address
@@ -35,7 +35,7 @@ struct Opt {
     contract_address: String,
 
     /// ERC721 Contract ABI JSON Path
-    #[structopt(name = "contract-json", short = "a", parse(from_os_str))]
+    #[structopt(name = "contract-json", short = "a", parse(from_os_str), default_value = "abi/contracts/Minty.sol/Minty.json")]
     contract_abi: PathBuf,
 }
 
