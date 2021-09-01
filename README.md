@@ -48,6 +48,8 @@ Mint Tx: 0x835357b29b7e0fc60f7e279fa8ae03a968727a6256cc6667abe54f8a2bba29ec
 
 Note: you should check the Tx hash on Etherscan to verify whether it was successful.
 
+Note: you should pin your CID on your local node or some pinning service, otherwise it might disappear in the future.
+
 ## Test on local Hardhat setup
 
 You could also test on a local Hardhat setup.
