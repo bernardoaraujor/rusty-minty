@@ -1,7 +1,7 @@
 # Rusty Minty
 
 A simplified Rusty rewrite of [Minty](https://github.com/yusefnapora/minty).
-Builds a CLI utility to mint ERC721 NFTs under the Minty contract.
+Provides a CLI utility to mint ERC721 NFTs under the Minty contract.
 
 Assumptions:
 - [IPFS](https://ipfs.io/#install) node running locally
@@ -20,6 +20,7 @@ First, get some tokens on [Rinkeby Faucet](https://faucet.rinkeby.io/).
 
 For readability, the example below sets a few environment variables:
 - `FILE`: path to file to be uploaded to IPFS.
+- `WEB3_PROV`: URL to Web3 provider. Ex.: Infura endpoint, or local Ethereum node.
 - `PRIV_KEY`: the Minter account private key (**warning**: be careful!).
 - `TOKEN_OWNER`: the address of the NFT owner. It could be Minter or different account.
 - `GAS_LIMIT`: the max amount of Gas you're willing to pay to mint.
