@@ -49,9 +49,8 @@ async fn main() {
     };
 
     let web3_provider = Opt::from_args().web3_provider;
-    match Url::parse(&web3_provider) {
-        Err(e) => panic!("{}", e),
-        _ => {}
+    if let Err(e) = Url::parse(&web3_provider) {
+        panic!("{}", e);
     }
 
     let priv_key = Opt::from_args().priv_key;
